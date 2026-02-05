@@ -42,7 +42,7 @@ const BookList = () => {
     if (!filter) return text;
 
     const regex = new RegExp(`(${filter})`, 'gi');
-    console.log(text.split(regex));
+
     return text.split(regex).map((substring, i) => {
       if (substring.toLowerCase() === filter.toLowerCase()) {
         return (
