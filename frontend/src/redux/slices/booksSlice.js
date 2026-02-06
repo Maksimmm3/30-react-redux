@@ -52,6 +52,14 @@ const booksSlice = createSlice({
       }
     });
   },
+  // // DEPRECATED: Object syntax (worked until Redux Toolkit v1.9)
+  // extraReducers: {
+  //   [fetchBook.fulfilled]: (state, action) => {
+  //     if (action.payload.title && action.payload.author) {
+  //       state.push(createBookWithID(action.payload, 'API'));
+  //     }
+  //   },
+  // },
 });
 
 export const { addBook, deleteBook, toggleFavorite } = booksSlice.actions;
